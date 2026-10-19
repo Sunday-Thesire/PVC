@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #18352b;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.navbar {
+    min-height: 82px;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background: #ffffff;
+    border-bottom: 1px solid #edf1ed;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 23px;
+    font-weight: 800;
+    color: #064e32;
+    
+}
+
+.logo-highlight{
+    color:#282a29;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: #53645a;
+    font-weight: 600;
+    
+}
+
+.nav-button {
+    padding: 11px 19px;
+    color: #ffffff;
+    background: #087443;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.hero {
+    padding: 80px 9%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 65px;
+ 
+}
+
+
+.your-vote {
+    display: inline-block;
+    margin-bottom: 17px;
+    color: #087443;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin-bottom: 22px;
+    color: #064e32;
+    font-size: clamp(42px, 5vw, 65px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: #087443;
+}
+
+.hero-description {
+    max-width: 490px;
+    margin-bottom: 28px;
+    color: #6d7c73;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+
+
+.first-button {
+    color: #ffffff;
+    background: #087443;
+    display: inline-block;
+    padding: 14px 21px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.second-button {
+    color: #064e32;
+    border: 1px solid #d6e4da;
+    background: #ffffff;
+    display: inline-block;
+    padding: 14px 21px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.second-button:hover {
+    background: #eaf6ef;
+}
+
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 28px;
+    color: #6d7c73;
+    font-size: 12px;
+}
+
+
+.hero-card {
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e7eee8;
+    border-radius: 16px;
+    box-shadow: 0 20px 55px rgba(22, 65, 42, 0.09);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.card-label {
+    color: #6d7c73;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.card-top h3 {
+    margin-top: 7px;
+    color: #064e32;
+    font-size: 21px;
+}
+
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #6d7c73;
+    font-size: 12px;
+}
+
+#progress-percentage {
+    color: #087443;
+    font-weight: 800;
+}
+
+.progress-track {
+    height: 7px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    background: #e8eee9;
+}
+
+.progress-fill {
+    width: 0;
+    height: 100%;
+    border-radius: 20px;
+    background: #087443;
+}
+
+.journey-step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 17px 0;
+    border-bottom: 1px solid #edf1ed;
+}
+
+.step-number {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    color:#087443;
+    background: #eaf6ef;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+.step-details h4 {
+    color: #18352b;
+    font-size: 14px;
+}
+
+.step-details p {
+    margin-top: 3px;
+    color: #6d7c73;
+    font-size: 11px;
+}
+
+.step-arrow {
+    color: #087443;
+    font-size: 20px;
+}
+
+.card-footer {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 7px;
+    color:#064e32;
+    background: #eaf6ef;
+    font-size: 11px;
+}
+
+.card-footer span {
+    margin-right: 6px;
+    font-weight: 800;
+}
+
+
+.checklist-section {
+    padding: 85px 9%;
+    background: #ffffff;
+}
+
+.journey-begins{
+    font-weight: bold;
+    color: #087443;
+    
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2,
+.about-section h2 {
+    margin-bottom: 15px;
+    color: #064e32;
+    font-size: clamp(29px, 4vw, 40px);
+    line-height: 1.25;
+}
+
+.section-heading h2 span {
+    color: #087443;
+}
+
+.section-heading p,
+.about-section p {
+    color: #6d7c73;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 23px;
+}
+
+.checklist-card {
+    padding: 28px;
+    border: 1px solid #e5ede7;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checklist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(22, 65, 42, 0.08);
+}
+
+.checklist-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #087443;
+    background: #eaf6ef;
+    font-weight: 800;
+}
+
+.checklist-card h3 {
+    margin-bottom: 12px;
+    color: #064e32;
+    font-size: 20px;
+}
+
+.checklist-card p {
+    margin-bottom: 22px;
+    color:#6d7c73;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.checklist-card a,
+.about-section a {
+    color: #087443;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.ballot-section {
+    padding: 70px 9%;
+    background-color: #f3f8f4;
+}
+
+.ballot-heading {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.ballot-heading h2 {
+    margin-bottom: 15px;
+    color: #064e32;
+    font-size: 35px;
+}
+
+.ballot-heading h2 span {
+    color: #087443;
+}
+
+.ballot-heading > p:last-child {
+    color: #6d7c73;
+    font-size: 15px;
+}
+
+.ballot-image {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #e5ede7;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px #dce8df;
+}
+
+.ballot-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+
+.ballot-notice {
+    max-width: 850px;
+    margin: 20px auto 0;
+    color: #53645a;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+
+
+.about-section {
+    padding: 70px;
+    text-align: center;
+    background: #eaf6ef
+}
+
+.about-section h2 {
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about-section p {
+    max-width: 650px;
+    margin: 0 auto 22px;
+}
+
+.about-section a {
+    display: inline-block;
+    padding: 12px 18px;
+    border: 1px solid #c9dfd0;
+    border-radius: 7px;
+    background: #ffffff;
+}
+
+
+.footer {
+    padding: 35px;
+    text-align: center;
+    background: #c9c5c5;
+    border-top: 1px solid #edf1ed;
+}
+
+.footer .logo {
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    margin-top: 8px;
+    color: rgb(18, 16, 16);
+    font-size: 12px;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .checklist-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .ballot-section {
+        padding: 60px 6%;
+    }
+
+    .about-section {
+        padding: 60px 6%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .checklist-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .checklist-card {
+        padding: 22px;
+    }
+
+    .checklist-card h3 {
+        font-size: 18px;
+    }
+
+    .section-heading {
+        margin-bottom: 28px;
+    }
+
+    .section-heading p,
+    .about-section p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .ballot-section {
+        padding: 45px 5%;
+    }
+
+    .ballot-heading h2 {
+        font-size: clamp(24px, 7vw, 30px);
+    }
+
+    .ballot-image {
+        padding: 10px;
+    }
+
+    .ballot-notice {
+        font-size: 12px;
+    }
+
+    .about-section {
+        padding: 45px 5%;
+    }
+
+    .about-section a {
+        padding: 11px 16px;
+    }
+
+    .footer {
+        padding: 28px 5%;
+    }
+}
+
